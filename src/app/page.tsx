@@ -1,5 +1,7 @@
+'use client'
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Link } from '@chakra-ui/next-js'
 
 export default function Home() {
   return (
@@ -8,6 +10,9 @@ export default function Home() {
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
+          <Link href='/about' color='blue.400' _hover={{ color: 'blue.500' }}>
+            About
+          </Link>
         </p>
         <div>
           <a
